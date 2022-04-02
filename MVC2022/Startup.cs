@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿ using Microsoft.EntityFrameworkCore;
 using MVC2022.Context;
+using MVC2022.Repositories;
+using MVC2022.Repositories.Interfaces;
 
 namespace MVC2022;
 public class Startup
@@ -16,6 +18,9 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
         services.AddControllersWithViews();
 
