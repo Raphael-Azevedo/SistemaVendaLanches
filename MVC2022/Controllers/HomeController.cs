@@ -8,6 +8,7 @@ namespace MVC2022.Controllers
     {
         public IActionResult Index()
         {
+
             return View();
         }
 
