@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC2022.Repositories.Interfaces;
+using MVC2022.ViewModels;
 
 namespace MVC2022.Controllers
 {
@@ -14,9 +15,15 @@ namespace MVC2022.Controllers
 
         public IActionResult List()
         {
-            var lanches = _lancheRepository.Lanches;
+            //var lanches = _lancheRepository.Lanches;
 
-            return View(lanches);
+            //return View(lanches);
+
+            var lanchesListViewModel = new LancheListViewModel();
+            lanchesListViewModel.Lanches = _lancheRepository.Lanches;
+            lanchesListViewModel.CategoriaAtual = "Categoria Atual";
+
+            return View(lanchesListViewModel);
         }
     }
 }
