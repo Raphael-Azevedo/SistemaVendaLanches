@@ -1,5 +1,6 @@
 ﻿ using Microsoft.EntityFrameworkCore;
 using MVC2022.Context;
+using MVC2022.Models;
 using MVC2022.Repositories;
 using MVC2022.Repositories.Interfaces;
 
@@ -23,6 +24,7 @@ public class Startup
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
         services.AddControllersWithViews();
 
