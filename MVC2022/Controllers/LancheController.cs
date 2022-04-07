@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC2022.Models;
 using MVC2022.Repositories.Interfaces;
 using MVC2022.ViewModels;
 
@@ -13,17 +14,36 @@ namespace MVC2022.Controllers
             _lancheRepository = lancheRepository;
         }
 
-        public IActionResult List()
+        public IActionResult List(string categoria)
         {
-            //var lanches = _lancheRepository.Lanches;
+            IEnumerable<Lanche> lanches;
+            string categoriaAtual = string.Empty;
 
-            //return View(lanches);
-
-            var lanchesListViewModel = new LancheListViewModel();
-            lanchesListViewModel.Lanches = _lancheRepository.Lanches;
-            lanchesListViewModel.CategoriaAtual = "Categoria Atual";
+            if(string.IsNullOrEmpty(categoria))
+            {
+                lanches = _lancheRepository.Lanches.OrderBy(l => l.LancheId);
+                categoriaAtual = "Todos os Lanches";
+            }
+            else
+            {
+                lanches = _lancheRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals(categoria))
+                    .OrderBy(c => c.Nome);
+                categoriaAtual = categoria;
+            }
+            var lanchesListViewModel = new LancheListViewModel
+            {
+                Lanches = lanches,
+                CategoriaAtual = categoriaAtual
+            }; 
 
             return View(lanchesListViewModel);
         }
+        public IActionResult Details(int lancheId)
+        {
+            var lanche= _lancheRepository.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
+            return View(lanche);
+        }
     }
+
+   
 }
