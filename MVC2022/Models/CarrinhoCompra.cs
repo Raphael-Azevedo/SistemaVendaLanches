@@ -83,10 +83,10 @@ namespace MVC2022.Models
 
         public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
         {
-            return CarrinhoCompraItems ?? (CarrinhoCompraItems = _context.CarrinhoCompraItens
+            return CarrinhoCompraItems ??= _context.CarrinhoCompraItens
                 .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
                 .Include(s => s.Lanche)
-                .ToList());
+                .ToList();
         }
         public void LimparCarrinho()
         {
