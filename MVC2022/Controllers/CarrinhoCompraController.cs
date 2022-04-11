@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC2022.Models;
 using MVC2022.Repositories.Interfaces;
 using MVC2022.ViewModels;
@@ -29,6 +30,7 @@ namespace MVC2022.Controllers
 
             return View(carrinhoCompraVM);
         }
+        [Authorize]
         public IActionResult AdicionarItemNoCarrinhoCompra (int lancheId)
         {
             var lancheSelecionado = _lancheRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);
@@ -39,7 +41,7 @@ namespace MVC2022.Controllers
             }
             return RedirectToAction("Index");
         }
-
+        [Authorize]
         public IActionResult RemoverItemDoCarrinhoCompra (int lancheId)
         {
             var lancheSelecionado = _lancheRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);

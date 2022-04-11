@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+bjHxeXAjEvJku/m0lH0kkroElf/ip7JcdXlbfg1t3g=",
+  "Hash": "5+cw0SM4fnxGWGAUju80ug8vpO6yWCR9uLqoVtXjgBU=",
   "Source": "MVC2022",
   "BasePath": "_content/MVC2022",
   "Mode": "Default",
@@ -221,6 +221,40 @@
       "OriginalItemSpec": "wwwroot\\images\\Home-iconred.png"
     },
     {
+      "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\login_48.png",
+      "SourceId": "MVC2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\",
+      "BasePath": "_content/MVC2022",
+      "RelativePath": "images/login_48.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login_48.png"
+    },
+    {
+      "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\login1.jpg",
+      "SourceId": "MVC2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\",
+      "BasePath": "_content/MVC2022",
+      "RelativePath": "images/login1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login1.jpg"
+    },
+    {
       "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\phone-app-icon.png",
       "SourceId": "MVC2022",
       "SourceType": "Discovered",
@@ -236,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\phone-app-icon.png"
+    },
+    {
+      "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\registro1.jpg",
+      "SourceId": "MVC2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\",
+      "BasePath": "_content/MVC2022",
+      "RelativePath": "images/registro1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\registro1.jpg"
     },
     {
       "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\remove.ico",

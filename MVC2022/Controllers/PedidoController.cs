@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC2022.Models;
 using MVC2022.Repositories.Interfaces;
 
@@ -14,11 +15,13 @@ namespace MVC2022.Controllers
             _pedidoRepository = pedidoRepository;
             _carrinhoCompra = carrinhoCompra;
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Checkout()
         {
             return View();
         }
+        [Authorize]
         [HttpPost]
         public IActionResult Checkout(Pedido pedido)
         {
