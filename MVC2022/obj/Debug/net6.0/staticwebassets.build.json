@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5+cw0SM4fnxGWGAUju80ug8vpO6yWCR9uLqoVtXjgBU=",
+  "Hash": "M46pBFnj2Zik53mlxB2EoQamAF1HlD8kK8Vs2MdE4KA=",
   "Source": "MVC2022",
   "BasePath": "_content/MVC2022",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\adminarea.jpg",
+      "SourceId": "MVC2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\",
+      "BasePath": "_content/MVC2022",
+      "RelativePath": "images/adminarea.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\adminarea.jpg"
     },
     {
       "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\carousel11.jpg",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\login1.jpg"
+    },
+    {
+      "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\negado1.jpg",
+      "SourceId": "MVC2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\",
+      "BasePath": "_content/MVC2022",
+      "RelativePath": "images/negado1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\negado1.jpg"
     },
     {
       "Identity": "D:\\REPOSITÓRIO\\SistemaVendaLanches\\MVC2022\\wwwroot\\images\\phone-app-icon.png",

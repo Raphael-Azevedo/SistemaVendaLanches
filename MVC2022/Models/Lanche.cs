@@ -42,7 +42,7 @@ namespace MVC2022.Models
         public bool IsLanchePreferido { get; set; }
         [Display(Name ="Estoque")]
         public bool EmEstoque { get; set; }
-
+        [Display(Name = "Categorias")]
         public int CategoriaId { get; set; }
         public virtual Categoria Categoria { get; set; }
     }
