@@ -11,7 +11,7 @@ namespace MVC2022.Models
 
         [Required(ErrorMessage ="O nome do lanche deve ser informado")]
         [Display(Name ="Nome do Lanche")]
-        [StringLength(80,MinimumLength =10, ErrorMessage ="O {0} deve ter no minímo {1} e no máximo {2}")]
+        [StringLength(80,MinimumLength =10, ErrorMessage ="O {0} deve ter no minímo {2} e no máximo {1}")]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "A descrição do lanche deve ser informada")]
