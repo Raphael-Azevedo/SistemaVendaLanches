@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC2022.Areas.Admin.Servicos;
 
 namespace MVC2022.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminGraficoController : Controller
     {
         private readonly GraficoVendasService _graficoVendas;
@@ -20,17 +23,17 @@ namespace MVC2022.Areas.Admin.Controllers
             return Json(lanchesVendasTotais);
         }
         [HttpGet]
-        public IActionResult Index(int dias)
+        public IActionResult Index()
         {
             return View();
         }
         [HttpGet]
-        public IActionResult VendasMensal(int dias)
+        public IActionResult VendasMensal()
         {
             return View();
         }
         [HttpGet]
-        public IActionResult VendasSemanal(int dias)
+        public IActionResult VendasSemanal()
         {
             return View();
         }
